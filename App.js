@@ -3,30 +3,44 @@ import { StyleSheet, Text, View, Image, Button } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text style={{ fontSize: 50, fontWeight: 'bold',color:'#66FCF1', fontFamily:'monospace' }} >BLACK CLOVER</Text>
-      <Text style={{ fontSize: 15, color:'white' }}>Open up App.js to start working on your app!</Text>
-      <Text style={{ fontSize: 20, color:'white'}} >Changes you make will automatically reload.</Text>
-      <Text style={{ fontSize: 25, color:'white', textDecorationLine: 'underline', fontStyle:'italic'}} >Shake your phone to open the developer menu.</Text>
+    <View style={{ flex: 1}}>
+      <View style={{flex:1, flexDirection: 'row'}}>
+        {/* countainer ke dua */}
+        <View style={{
+          backgroundColor: 'green',
+          flex: 1,
+        }}>
+        </View>
+        <View style={{
+          backgroundColor: 'yellow',
+          flex: 1,
+        }}>
+        </View>
+        {/* <View style={{
+          backgroundColor: 'black',
+          flex: 1,
+        }}>
+        </View>       */}
+        {/* countainer ke dua endnya */}
+      </View>
+
+        <View style={{
+        flex: 1,
+        flexDirection: "column"
+      }}>
+        <View style={{
+          flex: 1,
+          backgroundColor: 'red',
+        }}>
+        </View>
+        <View style={{
+          flex: 1,
+          backgroundColor: 'blue',
+        }}>
+        </View>
+      </View>
+
       
-      <Image source={require('./assets/clover.png')} style={{ width: 159, height: 159, marginTop:15, marginBottom: 15, color:"white" }} />
-      <Button
-        title="Spoiler Button"
-        onPress={() => alert('Ga boleh spoiler, Haram!')}
-      />
-      <Text style={{ fontSize: 30, color:'white', textShadowColor:'#66FCF1', textDecorationLine: 'underline' }} >Indonesia</Text>
-      <View style={{ width: 300, height: 100, backgroundColor: 'red', marginTop: 15 }} />
-      <View style={{ width: 300, height: 100, backgroundColor: 'white' }} />
-      <StatusBar style="auto" />
-    </View>
+    </View>  
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#1F2833',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
