@@ -10,7 +10,7 @@ const App = () => {
               width: 100,
               height: 50,
               color: 'white',
-              backgroundColor: color, // Vibrant blue
+              backgroundColor: color,
               textAlign: 'center',
               lineHeight: 50,
               fontSize: 20,
@@ -87,6 +87,9 @@ const App = () => {
       </ScrollView>
     </View>
   );
+
+
+
 };
 
 export default App;
