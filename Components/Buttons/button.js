@@ -17,4 +17,5 @@ const ButtonComponent = ({ title, color }) => {
         </View>
     )
 }
+
 export default ButtonComponent;
