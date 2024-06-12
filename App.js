@@ -2,7 +2,28 @@ import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
 import React from 'react';
 
 const App = () => {
+
+  const ButtonComponent = ({ title, color }) => {
+    return (
+      <View style={{ marginHorizontal: 10 }}>
+            <Text style={{
+              width: 100,
+              height: 50,
+              color: 'white',
+              backgroundColor: color, // Vibrant blue
+              textAlign: 'center',
+              lineHeight: 50,
+              fontSize: 20,
+              borderRadius: 10,
+            }}>{title}</Text>
+          </View>
+    )
+  }
+
   return (
+
+    
+
     <View style={{
       flex: 1,
       backgroundColor: '#000', // To blend with the background image
@@ -48,22 +69,6 @@ const App = () => {
           fontSize: 18,
           textAlign: 'center',
           marginTop: 20,
-        }}>
-          One Piece adalah anime sekaligus manga yang paling populer di dunia. Ceritanya mengikuti petualangan Monkey D. Luffy dan kru bajak laut Topi Jerami dalam mencari harta karun terbesar di dunia, One Piece.
-        </Text>
-        <Text style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-          marginTop: 20,
-        }}>
-          One Piece wudah melewati Wano Arch dan sekarang sedang memasuki arc baru, Elbaf. Dalam arc ini, Luffy dan Mugiwara kru akan berhadapan dengan Kizaru dan Saturn petinggi World Goverment.
-        </Text>
-        <Text style={{
-          color: 'white',
-          fontSize: 18,
-          textAlign: 'center',
-          marginTop: 20,
           marginBottom: 20,
         }}>
           Ayolah Nakama kita nonton One Piece.
@@ -74,30 +79,10 @@ const App = () => {
           alignItems: 'center',
           marginBottom: 50,
         }}>
-          <View style={{ marginHorizontal: 10 }}>
-            <Text style={{
-              width: 100,
-              height: 50,
-              color: 'white',
-              backgroundColor: '#007bff', // Vibrant blue
-              textAlign: 'center',
-              lineHeight: 50,
-              fontSize: 20,
-              borderRadius: 10,
-            }}>Login</Text>
-          </View>
-          <View style={{ marginHorizontal: 10 }}>
-            <Text style={{
-              width: 100,
-              height: 50,
-              color: 'white',
-              backgroundColor: '#28a745', // Vibrant green
-              textAlign: 'center',
-              lineHeight: 50,
-              fontSize: 20,
-              borderRadius: 10,
-            }}>Register</Text>
-          </View>
+
+          <ButtonComponent title="Sign In" color="#007bff" />
+          <ButtonComponent title="Sign Up" color="#06D84F" />
+          
         </View>
       </ScrollView>
     </View>
