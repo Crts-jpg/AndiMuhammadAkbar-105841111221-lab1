@@ -1,32 +1,12 @@
-import { StyleSheet, Text, View, Image, ScrollView } from 'react-native';
+import { Text, View, Image, ScrollView } from 'react-native';
 import React from 'react';
+import ButtonComponent from './Components/Buttons/button';
 
 const App = () => {
-
-  const ButtonComponent = ({ title, color }) => {
-    return (
-      <View style={{ marginHorizontal: 10 }}>
-            <Text style={{
-              width: 100,
-              height: 50,
-              color: 'white',
-              backgroundColor: color,
-              textAlign: 'center',
-              lineHeight: 50,
-              fontSize: 20,
-              borderRadius: 10,
-            }}>{title}</Text>
-          </View>
-    )
-  }
-
   return (
-
-    
-
     <View style={{
       flex: 1,
-      backgroundColor: '#000', // To blend with the background image
+      backgroundColor: '#000',
     }}>
       <Image
         source={require('./assets/onepiece.png')}
