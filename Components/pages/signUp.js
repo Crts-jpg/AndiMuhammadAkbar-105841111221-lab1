@@ -39,19 +39,19 @@ const SignUp = () => {
             }}
             >Or sign up with social account</Text>
 
-            <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-evenly'}}>
-            <View style={{flex: 1,backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderRadius: 10, width: 120, height: 80, marginRight: 15 }}>
-                <Image
-                source={require('../../assets/Google.png')}
-                style={{width: 30, height: 30}}
-                />
-            </View>
-            <View style={{flex: 1,backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderRadius: 5, width: 120, height: 80 }}>
-                <Image
-                source={require('../../assets/Facebook.png')}
-                style={{width: 30, height: 30}}
-                />
-            </View>
+            <View style={{flex: 1, flexDirection: 'row'}}>
+                <View style={{flex: 1,backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderRadius: 10, maxWidth: 90, width: 80, height: 70, marginRight: 15 }}>
+                    <Image
+                    source={require('../../assets/Google.png')}
+                    style={{width: 50, height: 50}}
+                    />
+                </View>
+                <View style={{flex: 1,backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderRadius: 10, maxWidth: 90, width: 80, height: 70 }}>
+                    <Image
+                    source={require('../../assets/Facebook.png')}
+                    style={{width: 50, height: 50}}
+                    />
+                </View>
             </View>
             
         </View>

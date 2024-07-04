@@ -2,6 +2,7 @@ import { Text, View, } from 'react-native';
 import React from 'react';
 
 const ButtonComponent = ({ title, color }) => {
+    
     return (
         <View style={{ marginHorizontal: 10, alignItems: 'center', justifyContent: 'start' }}>
                 <Text style={{
