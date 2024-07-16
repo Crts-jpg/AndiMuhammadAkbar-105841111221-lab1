@@ -4,7 +4,7 @@ import ButtonComponent from '../Buttons/button';
 import Inputan from '../TextInput/Inputan';
 
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
     return (
         <View style={{ flex: 1, backgroundColor: '#EEEEEE' }}>
         <View style={{ flex: 1, justifyContent: 'flex-start', alignItems: 'flex-start', marginLeft: 25, marginTop: 80 }}>
@@ -22,7 +22,8 @@ const SignUp = () => {
             marginBottom : 30,
             textAlign : 'right',
             marginLeft : 175
-            }}>
+            }}
+            onPress={() => navigation.navigate('Forget_Password')}>
             Already have an account?
             </Text>
             <ButtonComponent title="Sign Up" color="red"/>
