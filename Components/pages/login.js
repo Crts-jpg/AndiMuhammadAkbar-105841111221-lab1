@@ -14,12 +14,13 @@ const Login = ({navigation}) => {
                 <Inputan nama="Email" color="black" />
                 <Inputan nama="Password" color="black" />
                 <Text style={{fontSize: 14, marginTop: 10, marginBottom: 30, textAlign: 'right', marginLeft: 175}} onPress={() => navigation.navigate('Forget_Password')} >Forgot your password?</Text>
-                <ButtonComponent title="Login" color="red" borderRadius={30} />
+                <ButtonComponent title="Login" color="red" borderRadius={30} onPress={() => navigation.navigate('MainPage')}/>
                 <Text style={{fontSize: 14, marginTop: 10, marginBottom:  30, textAlign: 'center'}} onPress={() => navigation.navigate('signUp')}>Register your account</Text>
+                <Text style={{fontSize: 14, marginBottom:  30, textAlign: 'center'}} onPress={() => navigation.navigate('MainPage')}>Ke HomePage</Text>
             </View>
 
             <View style={{flex:1, alignItems: 'center', justifyContent: 'flex-start'}}>
-                <Text style={{ marginTop: 100, position:'fixed'}}>Or login with social account</Text>
+                <Text style={{ marginTop: 100,}}>Or login with social account</Text>
                 <View style={{flex: 1, flexDirection: 'row', justifyContent: 'space-evenly', marginTop: 20}}>
                     <View style={{flex: 1, backgroundColor: 'white', justifyContent: 'center', alignItems: 'center', borderRadius: 20, maxWidth: 90, width: 80, height: 70, marginRight: 15}}>
                         <Image

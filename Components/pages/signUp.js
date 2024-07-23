@@ -23,7 +23,7 @@ const SignUp = ({navigation}) => {
             textAlign : 'right',
             marginLeft : 175
             }}
-            onPress={() => navigation.navigate('Forget_Password')}>
+            onPress={() => navigation.navigate('login')}>
             Already have an account?
             </Text>
             <ButtonComponent title="Sign Up" color="red"/>
