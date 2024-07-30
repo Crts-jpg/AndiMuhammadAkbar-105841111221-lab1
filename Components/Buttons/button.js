@@ -1,21 +1,25 @@
-import { Text, View, } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-const ButtonComponent = ({ title, color }) => {
-    
+const ButtonComponent = ({ title, color, onPress }) => {
     return (
-        <View style={{ marginHorizontal: 10, alignItems: 'center', justifyContent: 'start' }}>
-                <Text style={{
+        <TouchableOpacity onPress={onPress} style={{ marginHorizontal: 10, alignItems: 'center', justifyContent: 'center' }}>
+            <View style={{
                 width: 350,
                 height: 50,
-                color: 'white',
                 backgroundColor: color,
-                textAlign: 'center',
-                lineHeight: 50,
-                fontSize: 20,
                 borderRadius: 50,
+                justifyContent: 'center',
+                alignItems: 'center',
+            }}>
+                <Text style={{
+                    color: 'white',
+                    fontSize: 20,
+                    lineHeight: 50,
                 }}>{title}</Text>
-        </View>
+            </View>
+        </TouchableOpacity>
     )
 }
+
 export default ButtonComponent;
